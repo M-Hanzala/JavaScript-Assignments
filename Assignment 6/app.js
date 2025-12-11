@@ -102,4 +102,4 @@ document.write(
     "------------------------------" + "<br>" +
     "Total      " + totalSubMarks + "       " + totalObtMarks + "<br>" +
     "Percentage " + "          " + percentage + "%"
-)
+) 
