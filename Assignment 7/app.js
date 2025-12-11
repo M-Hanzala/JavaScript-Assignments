@@ -109,45 +109,45 @@
 
 
 // // Question 8
-// var numDivBy3 = +prompt("Enter a number :")
+// var numDivBy3 = +prompt("Enter a number :");
 // if (numDivBy3 % 3 === 0) {
-//     alert(numDivBy3 + " is divisible by 3")
+//     alert(numDivBy3 + " is divisible by 3");
 // } else {
-//     alert(numDivBy3 + " is not divisible by 3")
+//     alert(numDivBy3 + " is not divisible by 3");
 // }
 
 
 
 
 // // Question 9 
-// var num = +prompt("Enter a number :")
+// var num = +prompt("Enter a number :");
 
 // if (num % 2 === 0) {
-//     alert(num + " is an even number!")
+//     alert(num + " is an even number!");
 // } else {
-//     alert(num + " is an odd number!")
+//     alert(num + " is an odd number!");
 // }
 
 
 
 
 // // Question 10
-// var temprature = prompt("Enter the temprature (In Number)")
+// var temprature = prompt("Enter the temprature (In Number)");
 // if (temprature >= 40) {
-//     alert("It's too hot outside.")
+//     alert("It's too hot outside.");
 // } else if (temprature >= 30) {
-//     alert("The weather today is normal.")
+//     alert("The weather today is normal.");
 // } else if (temprature >= 20) {
-//     alert("Today's weather is cool.")
+//     alert("Today's weather is cool.");
 // } else if (temprature >= 10 || temprature < 10) {
-//     alert("OMG! Today's weather is so cool.")
+//     alert("OMG! Today's weather is so cool.");
 // }
 
 
 
 
 // Question 11
-document.write("<h1>Calculator</h1>")
+document.write("<h1>Calculator</h1>");
 
 var firstNum = +prompt("Enter first number :");
 var secondNum = +prompt("Enter second number:");
