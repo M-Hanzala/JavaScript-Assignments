@@ -201,4 +201,4 @@ for (var i = 0; i < str.length; i++) {
 document.write(
     "Text: " + str + "<br>" +
     "Number of occurrence(s) of word 'the': " + count
-)
+) 
