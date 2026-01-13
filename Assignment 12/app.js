@@ -58,3 +58,12 @@
 // document.write("The weight of user is " + userWeight + " kilograms.");
 
 
+// Question 8
+var secretNum = Math.floor(Math.random() * 10) + 1;
+var userInput = prompt("Enter a number between 1 to 10: " + "\nIf you guess same as our secret random number you'll get congratulations 🎉");
+userInput = parseInt(userInput);
+if (userInput === secretNum) {
+    alert("Congratulations 🎉🎉🎉")
+} else {
+    alert("Try Again !")
+}
