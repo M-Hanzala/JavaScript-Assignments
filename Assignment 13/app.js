@@ -131,19 +131,19 @@ dueDate.setDate(10);
 var date = dueDate.getDate();
 var year = dueDate.getFullYear();
 
-// var netAmount = numberOfUnits * chargesPerUnit;
-// var grossAmount = netAmount + lateCharges;
+var netAmount = numberOfUnits * chargesPerUnit;
+var grossAmount = netAmount + lateCharges;
 
-// document.write(
-//     "<h1>K-Electric Bill</h1>" + "<br>" +
+document.write(
+    "<h1>K-Electric Bill</h1>" + "<br>" +
 
-//     "Customer Name: " + customerName + "<br>" +
-//     "Month: " + month + "<br>" +
-//     "Number Of Units: " + numberOfUnits + "<br>" +
-//     "Charges Per Unit: " + chargesPerUnit + "<br><br>" +
+    "Customer Name: " + customerName + "<br>" +
+    "Month: " + month + "<br>" +
+    "Number Of Units: " + numberOfUnits + "<br>" +
+    "Charges Per Unit: " + chargesPerUnit + "<br><br>" +
 
-//     "Due Date: " + date + " / " + month.slice(0 , 3) + " / " + year + "<br>" +
-//     "Net Amount Payable (within due date): " + netAmount + "<br>" +
-//     "Late Payment Charges: " + lateCharges + "<br>" +
-//     "Gross Amount Payable (after due date): " + grossAmount
-// );
+    "Due Date: " + date + " / " + month.slice(0 , 3) + " / " + year + "<br>" +
+    "Net Amount Payable (within due date): " + netAmount + "<br>" +
+    "Late Payment Charges: " + lateCharges + "<br>" +
+    "Gross Amount Payable (after due date): " + grossAmount
+);
