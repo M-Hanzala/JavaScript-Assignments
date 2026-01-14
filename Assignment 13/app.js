@@ -72,13 +72,78 @@
 // alert(diffInDays + " days have passed since 1st Ramzan, 2025");
 
 
-// Question 10
-var refDate = new Date(2026, 0, 13);
-var beginYear = new Date(2026, 0, 1);
+// // Question 10
+// var refDate = new Date(2026, 0, 13);
+// var beginYear = new Date(2026, 0, 1);
 
-var diffInMs = refDate.getTime() - beginYear.getTime();
-var diffInSec = diffInMs / 1000;
+// var diffInMs = refDate.getTime() - beginYear.getTime();
+// var diffInSec = diffInMs / 1000;
 
-document.write(
-    "On reference date " + refDate + ", " + diffInSec + " seconds had passed since beginning of 2026"
-);
+// document.write(
+//     "On reference date " + refDate + ", " + diffInSec + " seconds had passed since beginning of 2026"
+// );
+
+
+// // Question 11
+// var currentDate = new Date();
+// var hours = currentDate.getHours();
+// currentDate.setHours(hours + 1);
+// document.write(
+//     "Current Date: " + currentDate + "<br>" 
+// );
+// currentDate.setHours(hours);
+// document.write(
+//     "1 hour ago, it was " + currentDate
+// );
+
+
+// // Question 12
+// var now = new Date();
+// var yearGet = now.getFullYear();
+// document.write("Current Date: " + now + "<br>");
+
+// now.setFullYear(yearGet - 100);
+// document.write("100 years back, it was " + now);
+
+
+// // Question 13
+// var age = +prompt("Enter your age:");
+// var now = new Date();
+// var getYear = now.getFullYear();
+// now.setFullYear(getYear - age);
+
+// document.write(
+//     "Your age is " + age + "<br>" + 
+//     "Your birth year is " + now.getFullYear()
+// );
+
+
+// Question 14
+var customerName = "ABC Customer";
+var now = new Date();
+var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var month = monthName[now.getMonth()];
+var numberOfUnits = 410;
+var chargesPerUnit = 16;
+var lateCharges = 350;
+var dueDate = new Date();
+dueDate.setDate(10);
+var date = dueDate.getDate();
+var year = dueDate.getFullYear();
+
+// var netAmount = numberOfUnits * chargesPerUnit;
+// var grossAmount = netAmount + lateCharges;
+
+// document.write(
+//     "<h1>K-Electric Bill</h1>" + "<br>" +
+
+//     "Customer Name: " + customerName + "<br>" +
+//     "Month: " + month + "<br>" +
+//     "Number Of Units: " + numberOfUnits + "<br>" +
+//     "Charges Per Unit: " + chargesPerUnit + "<br><br>" +
+
+//     "Due Date: " + date + " / " + month.slice(0 , 3) + " / " + year + "<br>" +
+//     "Net Amount Payable (within due date): " + netAmount + "<br>" +
+//     "Late Payment Charges: " + lateCharges + "<br>" +
+//     "Gross Amount Payable (after due date): " + grossAmount
+// );
