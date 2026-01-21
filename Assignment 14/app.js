@@ -154,3 +154,47 @@ function add2Num(a, b) {
 // console.log(
 //     longestWord(str)
 // );
+
+
+// // Question 13
+// function countOccurrences(string, letter) {
+//     var strSeprating = string.split("");
+//     var numOfOcc = 0;
+//     var indexes = [];
+
+//     for (var i = 0; i < strSeprating.length; i++) {
+//         if (strSeprating[i] === letter) {
+//             numOfOcc++;
+//             indexes.push(i);
+//         }
+//     }
+//     console.log("The given letter is at index: " + indexes);
+
+//     return alert("The number of occurrences of the specified letter is " + numOfOcc);
+// }
+
+// countOccurrences("my name is hanzala", "a");
+
+
+// // Question 14
+// function calcCircumference(radius) {
+//     var π = 3.14;
+//     var circumference = 2 * π * radius;
+//     return circumference;
+// }
+
+// var r = +prompt("Enter value of radius to calculate properties of circle, Circumference:");
+// console.log(
+//     calcCircumference(r)
+// );
+
+function calcArea(radius) {
+    var π = 3.14;
+    var area = π * (radius ** 2);
+    return area;
+}
+
+var r = +prompt("Enter value of radius to calculate properties of circle, Area:");
+console.log(
+    calcArea(r)
+);
