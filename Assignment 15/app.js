@@ -97,27 +97,27 @@
 // );
 
 
-// Question 7
-function countVowelPairs(sentence) {
-    var count = 0;
-    sentence = sentence.toLowerCase();
+// // Question 7
+// function countVowelPairs(sentence) {
+//     var count = 0;
+//     sentence = sentence.toLowerCase();
 
-    for (var i = 0; i < sentence.length - 1; i++) {
-        var pair = sentence[i] + sentence[i + 1];
+//     for (var i = 0; i < sentence.length - 1; i++) {
+//         var pair = sentence[i] + sentence[i + 1];
 
-        switch (pair) {
-            case "aa": case "ae": case "ai": case "ao": case "au":
-            case "ea": case "ee": case "ei": case "eo": case "eu":
-            case "ia": case "ie": case "ii": case "io": case "iu":
-            case "oa": case "oe": case "oi": case "oo": case "ou":
-            case "ua": case "ue": case "ui": case "uo": case "uu":
+//         switch (pair) {
+//             case "aa": case "ae": case "ai": case "ao": case "au":
+//             case "ea": case "ee": case "ei": case "eo": case "eu":
+//             case "ia": case "ie": case "ii": case "io": case "iu":
+//             case "oa": case "oe": case "oi": case "oo": case "ou":
+//             case "ua": case "ue": case "ui": case "uo": case "uu":
 
-                count++;
-                break;
-        }
-    }
-    return count;
-}
+//                 count++;
+//                 break;
+//         }
+//     }
+//     return count;
+// }
 
-var str = "Pleases read this application and give me gratuity";
-console.log(countVowelPairs(str));
+// var str = "Pleases read this application and give me gratuity";
+// console.log(countVowelPairs(str));
