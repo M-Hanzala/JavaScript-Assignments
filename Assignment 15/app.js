@@ -121,3 +121,105 @@
 
 // var str = "Pleases read this application and give me gratuity";
 // console.log(countVowelPairs(str));
+
+
+// // Question 8
+// function kmToMeter(kmValue) {
+//     var km = kmValue;
+//     var meter = km * 1000;
+//     return meter;
+// }
+
+// function kmToFeet(kmValue) {
+//     var km = kmValue;
+//     var feet = km * 3280.84;
+//     return feet;
+// }
+
+// function kmToInches(kmValue) {
+//     var km = kmValue;
+//     var cm = km * 100000;
+//     var inches = cm / 2.54;
+//     return inches.toFixed(2);
+// }
+
+// function kmToCentimeter(kmValue) {
+//     var km = kmValue;
+//     var cm = km * 100000;
+//     return cm;
+// }
+
+// var kilometer = prompt("Enter the distance between two cities in Kilometer:");
+// console.log(
+//     kilometer + "km is equal to " +
+//     kmToCentimeter(kilometer) + "cm"
+// );
+
+
+// // Question 9
+// function calOvertimePay(hours) {
+//     var workHour = 40;
+//     var payPerHr = 12;
+
+//     if (hours > workHour) {
+//         var overtimeHr = hours - workHour;
+//         var overtimePay = overtimeHr * payPerHr;
+//     }
+//     return overtimePay;
+// }
+
+// var empHours = prompt("Enter your total working hours." + "\nRemember hours should not be in fractional part.");
+// console.log(
+//     "Your overtime pay is " + calOvertimePay(empHours) + " as Rs.12 per hour."
+// );
+
+
+// Question 10
+function cashierNotesDenomination(amount) {
+    var remainingAmount;
+    var hundredNotes = Math.floor(amount / 100);
+    remainingAmount = amount % 100;
+
+    var fiftyNotes = Math.floor(remainingAmount / 50);
+    remainingAmount = remainingAmount % 50;
+
+    var tenNotes = Math.floor(remainingAmount / 10);
+
+    // These conditions are just for my practice and grip on if else conditions! Not for question.
+    if (hundredNotes > 0 && fiftyNotes > 0 && tenNotes > 0) {
+        document.write(
+            "You will have " + hundredNotes + " hundred notes " +
+            fiftyNotes + " fifty notes " + tenNotes + " ten notes."
+        )
+    } else if (hundredNotes == 0 && fiftyNotes > 0 && tenNotes == 0) {
+        document.write(
+            "You will have " + fiftyNotes + " fifty notes."
+        )
+    } else if (hundredNotes == 0 && fiftyNotes == 0 && tenNotes > 0) {
+        document.write(
+            "You will have " + tenNotes + " ten notes."
+        )
+    } else if (fiftyNotes == 0 && tenNotes == 0) {
+        document.write(
+            "You will have " + hundredNotes + " hundred notes."
+        )
+    } else if (fiftyNotes > 0 && tenNotes == 0) {
+        document.write(
+            "You will have " + hundredNotes + " hundred notes " +
+            fiftyNotes + " fifty notes."
+        )
+    } else if (fiftyNotes == 0 && tenNotes > 0) {
+        document.write(
+            "You will have " + hundredNotes + " hundred notes " +
+            tenNotes + " ten notes."
+        )
+    } else if (hundredNotes == 0 && fiftyNotes > 0 && tenNotes > 0) {
+        document.write(
+            "You will have " + fiftyNotes + " fifty notes " +
+            tenNotes + " ten notes."
+        )
+    }
+}
+
+// var withdrawl = +prompt("Enter amount to withdraw:");
+// cashierNotesDenomination(withdrawl);
