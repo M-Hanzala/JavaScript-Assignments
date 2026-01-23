@@ -221,5 +221,5 @@ function cashierNotesDenomination(amount) {
     }
 }
 
-// var withdrawl = +prompt("Enter amount to withdraw:");
-// cashierNotesDenomination(withdrawl);
+var withdrawl = +prompt("Enter amount to withdraw:");
+cashierNotesDenomination(withdrawl);
